@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F8DA0BE486605D313550CD /* Pods_BoilerBond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D3849084052C8BFC4A4AF4 /* Pods_BoilerBond.framework */; };
+		A6D2391B25D0B0FD00683F26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D2391A25D0B0FD00683F26 /* GoogleService-Info.plist */; };
+		C606F51E2618D9AE002CDE42 /* Admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C606F51D2618D9AD002CDE42 /* Admin.storyboard */; };
+		C606F5212618DB00002CDE42 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606F5202618DB00002CDE42 /* AdminViewController.swift */; };
+		C606F5242618DBBF002CDE42 /* AdminUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606F5232618DBBF002CDE42 /* AdminUserViewController.swift */; };
+		C606F5272618DD0C002CDE42 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606F5262618DD0C002CDE42 /* UserTableViewCell.swift */; };
+		C606F52A2618DFB9002CDE42 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606F5292618DFB9002CDE42 /* CourseViewController.swift */; };
+		C606F52D2618E6B6002CDE42 /* CourseAdminTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606F52C2618E6B6002CDE42 /* CourseAdminTableViewCell.swift */; };
+		C606F530261A65B1002CDE42 /* AdminPosts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C606F52F261A65B1002CDE42 /* AdminPosts.storyboard */; };
+		C606F533261A65E5002CDE42 /* AdminPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606F532261A65E5002CDE42 /* AdminPostViewController.swift */; };
+		C606F536261A6768002CDE42 /* AdminPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606F535261A6768002CDE42 /* AdminPostTableViewCell.swift */; };
+		C606F53926213557002CDE42 /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C606F53826213557002CDE42 /* Comments.storyboard */; };
+		C606F53C262135D1002CDE42 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606F53B262135D1002CDE42 /* CommentTableViewCell.swift */; };
+		C606F53F2621360E002CDE42 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606F53E2621360E002CDE42 /* CommentViewController.swift */; };
+		C606F5422621EFE5002CDE42 /* AdminComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C606F5412621EFE4002CDE42 /* AdminComments.storyboard */; };
+		C606F5452621F01E002CDE42 /* AdminCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606F5442621F01E002CDE42 /* AdminCommentViewController.swift */; };
+		C606F54826238FA3002CDE42 /* SinglePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C606F54726238FA2002CDE42 /* SinglePost.storyboard */; };
+		C606F54B262390D7002CDE42 /* SinglePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606F54A262390D7002CDE42 /* SinglePostViewController.swift */; };
+		C6A57DD225D0A16600CE1CAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57DD125D0A16600CE1CAC /* AppDelegate.swift */; };
+		C6A57DD425D0A16600CE1CAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57DD325D0A16600CE1CAC /* SceneDelegate.swift */; };
+		C6A57DD625D0A16600CE1CAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57DD525D0A16600CE1CAC /* ViewController.swift */; };
+		C6A57DD925D0A16600CE1CAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A57DD725D0A16600CE1CAC /* Main.storyboard */; };
+		C6A57DDB25D0A16A00CE1CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A57DDA25D0A16A00CE1CAC /* Assets.xcassets */; };
+		C6A57DDE25D0A16A00CE1CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A57DDC25D0A16A00CE1CAC /* LaunchScreen.storyboard */; };
+		C6A57E7E25D0C00300CE1CAC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57E7D25D0C00300CE1CAC /* User.swift */; };
+		C6A57E8125D0C06900CE1CAC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57E8025D0C06900CE1CAC /* Post.swift */; };
+		C6A57E8425D0C0C400CE1CAC /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57E8325D0C0C400CE1CAC /* Course.swift */; };
+		C6A57E8725D3450B00CE1CAC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A57E8625D3450B00CE1CAC /* Login.storyboard */; };
+		C6A57E8A25D3460D00CE1CAC /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A57E8925D3460D00CE1CAC /* SignUp.storyboard */; };
+		C6A57E8D25D347C100CE1CAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57E8C25D347C100CE1CAC /* LoginViewController.swift */; };
+		C6A57E9025D348A200CE1CAC /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A57E8F25D348A200CE1CAC /* Feed.storyboard */; };
+		C6A57E9325D34B6500CE1CAC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57E9225D34B6400CE1CAC /* SignUpViewController.swift */; };
+		C6A57E9625D34D9900CE1CAC /* ProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57E9525D34D9900CE1CAC /* ProfilePictureViewController.swift */; };
+		C6A57E9925D34F9200CE1CAC /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57E9825D34F9100CE1CAC /* InfoViewController.swift */; };
+		C6A57E9C25D352B000CE1CAC /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57E9B25D352B000CE1CAC /* VerifyEmailViewController.swift */; };
+		C6A57E9F25D4411F00CE1CAC /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57E9E25D4411E00CE1CAC /* SettingsTableViewController.swift */; };
+		C6A57EA225D593D300CE1CAC /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57EA125D593D200CE1CAC /* ForgotPasswordViewController.swift */; };
+		C6A57EA525D5F2AB00CE1CAC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57EA425D5F2AA00CE1CAC /* ProfileViewController.swift */; };
+		C6A57EA825E2DCAC00CE1CAC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57EA725E2DCAA00CE1CAC /* SearchViewController.swift */; };
+		C6A57EAB25E2DFD300CE1CAC /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57EAA25E2DFD200CE1CAC /* CourseTableViewCell.swift */; };
+		C6A57EAE25F6E40C00CE1CAC /* CreatePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A57EAD25F6E40A00CE1CAC /* CreatePost.storyboard */; };
+		C6A57EB125F6E85B00CE1CAC /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57EB025F6E85A00CE1CAC /* CreatePostViewController.swift */; };
+		C6A57EB425F6EC4D00CE1CAC /* CreateCourse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A57EB325F6EC4C00CE1CAC /* CreateCourse.storyboard */; };
+		C6A57EB725F6ED1500CE1CAC /* CreateCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57EB625F6ED1400CE1CAC /* CreateCourseViewController.swift */; };
+		C6A57EBA25F6EFA300CE1CAC /* EnrolledCourses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A57EB925F6EFA300CE1CAC /* EnrolledCourses.storyboard */; };
+		C6A57EBD25F6F0BB00CE1CAC /* EnrolledCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57EBC25F6F0BB00CE1CAC /* EnrolledCoursesViewController.swift */; };
+		C6A57EC025F6F15400CE1CAC /* EnrolledCoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57EBF25F6F15400CE1CAC /* EnrolledCoursesTableViewCell.swift */; };
+		C6A57EC325FC425300CE1CAC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57EC225FC425100CE1CAC /* PostTableViewCell.swift */; };
+		C6A57EC625FE9C8D00CE1CAC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57EC525FE9C8B00CE1CAC /* FeedViewController.swift */; };
+		C6A57EC9260161C800CE1CAC /* PostsUnderCourse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A57EC8260161C600CE1CAC /* PostsUnderCourse.storyboard */; };
+		C6A57ECC2601638300CE1CAC /* CoursePostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A57ECB2601638200CE1CAC /* CoursePostsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21D3849084052C8BFC4A4AF4 /* Pods_BoilerBond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoilerBond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37386E2E585449512D600BC0 /* Pods-BoilerBond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoilerBond.release.xcconfig"; path = "Target Support Files/Pods-BoilerBond/Pods-BoilerBond.release.xcconfig"; sourceTree = "<group>"; };
+		5930B38B41CEFBDB402E5F1B /* Pods-BoilerBond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoilerBond.debug.xcconfig"; path = "Target Support Files/Pods-BoilerBond/Pods-BoilerBond.debug.xcconfig"; sourceTree = "<group>"; };
+		A6D2391A25D0B0FD00683F26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C606F51D2618D9AD002CDE42 /* Admin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Admin.storyboard; sourceTree = "<group>"; };
+		C606F5202618DB00002CDE42 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		C606F5232618DBBF002CDE42 /* AdminUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminUserViewController.swift; sourceTree = "<group>"; };
+		C606F5262618DD0C002CDE42 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		C606F5292618DFB9002CDE42 /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		C606F52C2618E6B6002CDE42 /* CourseAdminTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseAdminTableViewCell.swift; sourceTree = "<group>"; };
+		C606F52F261A65B1002CDE42 /* AdminPosts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminPosts.storyboard; sourceTree = "<group>"; };
+		C606F532261A65E5002CDE42 /* AdminPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPostViewController.swift; sourceTree = "<group>"; };
+		C606F535261A6768002CDE42 /* AdminPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPostTableViewCell.swift; sourceTree = "<group>"; };
+		C606F53826213557002CDE42 /* Comments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comments.storyboard; sourceTree = "<group>"; };
+		C606F53B262135D1002CDE42 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		C606F53E2621360E002CDE42 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		C606F5412621EFE4002CDE42 /* AdminComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminComments.storyboard; sourceTree = "<group>"; };
+		C606F5442621F01E002CDE42 /* AdminCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCommentViewController.swift; sourceTree = "<group>"; };
+		C606F54726238FA2002CDE42 /* SinglePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SinglePost.storyboard; sourceTree = "<group>"; };
+		C606F54A262390D7002CDE42 /* SinglePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePostViewController.swift; sourceTree = "<group>"; };
+		C6A57DCE25D0A16600CE1CAC /* BoilerBond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoilerBond.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A57DD125D0A16600CE1CAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6A57DD325D0A16600CE1CAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C6A57DD525D0A16600CE1CAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6A57DD825D0A16600CE1CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6A57DDA25D0A16A00CE1CAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6A57DDD25D0A16A00CE1CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6A57DDF25D0A16A00CE1CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A57E7D25D0C00300CE1CAC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C6A57E8025D0C06900CE1CAC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C6A57E8325D0C0C400CE1CAC /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		C6A57E8625D3450B00CE1CAC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		C6A57E8925D3460D00CE1CAC /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		C6A57E8C25D347C100CE1CAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C6A57E8F25D348A200CE1CAC /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		C6A57E9225D34B6400CE1CAC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C6A57E9525D34D9900CE1CAC /* ProfilePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureViewController.swift; sourceTree = "<group>"; };
+		C6A57E9825D34F9100CE1CAC /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		C6A57E9B25D352B000CE1CAC /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
+		C6A57E9E25D4411E00CE1CAC /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		C6A57EA125D593D200CE1CAC /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		C6A57EA425D5F2AA00CE1CAC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C6A57EA725E2DCAA00CE1CAC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C6A57EAA25E2DFD200CE1CAC /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		C6A57EAD25F6E40A00CE1CAC /* CreatePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreatePost.storyboard; sourceTree = "<group>"; };
+		C6A57EB025F6E85A00CE1CAC /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		C6A57EB325F6EC4C00CE1CAC /* CreateCourse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCourse.storyboard; sourceTree = "<group>"; };
+		C6A57EB625F6ED1400CE1CAC /* CreateCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseViewController.swift; sourceTree = "<group>"; };
+		C6A57EB925F6EFA300CE1CAC /* EnrolledCourses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnrolledCourses.storyboard; sourceTree = "<group>"; };
+		C6A57EBC25F6F0BB00CE1CAC /* EnrolledCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrolledCoursesViewController.swift; sourceTree = "<group>"; };
+		C6A57EBF25F6F15400CE1CAC /* EnrolledCoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrolledCoursesTableViewCell.swift; sourceTree = "<group>"; };
+		C6A57EC225FC425100CE1CAC /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		C6A57EC525FE9C8B00CE1CAC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C6A57EC8260161C600CE1CAC /* PostsUnderCourse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostsUnderCourse.storyboard; sourceTree = "<group>"; };
+		C6A57ECB2601638200CE1CAC /* CoursePostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePostsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6A57DCB25D0A16600CE1CAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F8DA0BE486605D313550CD /* Pods_BoilerBond.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		393B2A23CB0B412ECD20EE3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5930B38B41CEFBDB402E5F1B /* Pods-BoilerBond.debug.xcconfig */,
+				37386E2E585449512D600BC0 /* Pods-BoilerBond.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		671C2AA805426289855F8174 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21D3849084052C8BFC4A4AF4 /* Pods_BoilerBond.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6A57DC525D0A16600CE1CAC = {
+			isa = PBXGroup;
+			children = (
+				C6A57DD025D0A16600CE1CAC /* BoilerBond */,
+				C6A57DCF25D0A16600CE1CAC /* Products */,
+				393B2A23CB0B412ECD20EE3B /* Pods */,
+				671C2AA805426289855F8174 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6A57DCF25D0A16600CE1CAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6A57DCE25D0A16600CE1CAC /* BoilerBond.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6A57DD025D0A16600CE1CAC /* BoilerBond */ = {
+			isa = PBXGroup;
+			children = (
+				C6A57DD125D0A16600CE1CAC /* AppDelegate.swift */,
+				C6A57DD325D0A16600CE1CAC /* SceneDelegate.swift */,
+				C6A57DD525D0A16600CE1CAC /* ViewController.swift */,
+				C6A57DD725D0A16600CE1CAC /* Main.storyboard */,
+				C6A57DDA25D0A16A00CE1CAC /* Assets.xcassets */,
+				C6A57DDC25D0A16A00CE1CAC /* LaunchScreen.storyboard */,
+				C6A57DDF25D0A16A00CE1CAC /* Info.plist */,
+				A6D2391A25D0B0FD00683F26 /* GoogleService-Info.plist */,
+				C6A57E7D25D0C00300CE1CAC /* User.swift */,
+				C6A57E8025D0C06900CE1CAC /* Post.swift */,
+				C6A57E8325D0C0C400CE1CAC /* Course.swift */,
+				C6A57E8625D3450B00CE1CAC /* Login.storyboard */,
+				C6A57E8925D3460D00CE1CAC /* SignUp.storyboard */,
+				C6A57E8C25D347C100CE1CAC /* LoginViewController.swift */,
+				C6A57E8F25D348A200CE1CAC /* Feed.storyboard */,
+				C6A57E9225D34B6400CE1CAC /* SignUpViewController.swift */,
+				C6A57E9525D34D9900CE1CAC /* ProfilePictureViewController.swift */,
+				C6A57E9825D34F9100CE1CAC /* InfoViewController.swift */,
+				C6A57E9B25D352B000CE1CAC /* VerifyEmailViewController.swift */,
+				C6A57E9E25D4411E00CE1CAC /* SettingsTableViewController.swift */,
+				C6A57EA125D593D200CE1CAC /* ForgotPasswordViewController.swift */,
+				C6A57EA425D5F2AA00CE1CAC /* ProfileViewController.swift */,
+				C6A57EA725E2DCAA00CE1CAC /* SearchViewController.swift */,
+				C6A57EAA25E2DFD200CE1CAC /* CourseTableViewCell.swift */,
+				C6A57EAD25F6E40A00CE1CAC /* CreatePost.storyboard */,
+				C6A57EB025F6E85A00CE1CAC /* CreatePostViewController.swift */,
+				C6A57EB325F6EC4C00CE1CAC /* CreateCourse.storyboard */,
+				C6A57EB625F6ED1400CE1CAC /* CreateCourseViewController.swift */,
+				C6A57EB925F6EFA300CE1CAC /* EnrolledCourses.storyboard */,
+				C6A57EBC25F6F0BB00CE1CAC /* EnrolledCoursesViewController.swift */,
+				C6A57EBF25F6F15400CE1CAC /* EnrolledCoursesTableViewCell.swift */,
+				C6A57EC225FC425100CE1CAC /* PostTableViewCell.swift */,
+				C6A57EC525FE9C8B00CE1CAC /* FeedViewController.swift */,
+				C6A57EC8260161C600CE1CAC /* PostsUnderCourse.storyboard */,
+				C6A57ECB2601638200CE1CAC /* CoursePostsViewController.swift */,
+				C606F51D2618D9AD002CDE42 /* Admin.storyboard */,
+				C606F5202618DB00002CDE42 /* AdminViewController.swift */,
+				C606F5232618DBBF002CDE42 /* AdminUserViewController.swift */,
+				C606F5262618DD0C002CDE42 /* UserTableViewCell.swift */,
+				C606F5292618DFB9002CDE42 /* CourseViewController.swift */,
+				C606F52C2618E6B6002CDE42 /* CourseAdminTableViewCell.swift */,
+				C606F52F261A65B1002CDE42 /* AdminPosts.storyboard */,
+				C606F532261A65E5002CDE42 /* AdminPostViewController.swift */,
+				C606F535261A6768002CDE42 /* AdminPostTableViewCell.swift */,
+				C606F53826213557002CDE42 /* Comments.storyboard */,
+				C606F53B262135D1002CDE42 /* CommentTableViewCell.swift */,
+				C606F53E2621360E002CDE42 /* CommentViewController.swift */,
+				C606F5412621EFE4002CDE42 /* AdminComments.storyboard */,
+				C606F5442621F01E002CDE42 /* AdminCommentViewController.swift */,
+				C606F54726238FA2002CDE42 /* SinglePost.storyboard */,
+				C606F54A262390D7002CDE42 /* SinglePostViewController.swift */,
+			);
+			path = BoilerBond;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6A57DCD25D0A16600CE1CAC /* BoilerBond */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6A57DE225D0A16A00CE1CAC /* Build configuration list for PBXNativeTarget "BoilerBond" */;
+			buildPhases = (
+				C663FFF745AED0BBEFB0228A /* [CP] Check Pods Manifest.lock */,
+				C6A57DCA25D0A16600CE1CAC /* Sources */,
+				C6A57DCB25D0A16600CE1CAC /* Frameworks */,
+				C6A57DCC25D0A16600CE1CAC /* Resources */,
+				51300AA1C0CCDE133D62B38F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoilerBond;
+			productName = BoilerBond;
+			productReference = C6A57DCE25D0A16600CE1CAC /* BoilerBond.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6A57DC625D0A16600CE1CAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					C6A57DCD25D0A16600CE1CAC = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = C6A57DC925D0A16600CE1CAC /* Build configuration list for PBXProject "BoilerBond" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6A57DC525D0A16600CE1CAC;
+			productRefGroup = C6A57DCF25D0A16600CE1CAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6A57DCD25D0A16600CE1CAC /* BoilerBond */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6A57DCC25D0A16600CE1CAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A57DDE25D0A16A00CE1CAC /* LaunchScreen.storyboard in Resources */,
+				C6A57EB425F6EC4D00CE1CAC /* CreateCourse.storyboard in Resources */,
+				C6A57EBA25F6EFA300CE1CAC /* EnrolledCourses.storyboard in Resources */,
+				C6A57E9025D348A200CE1CAC /* Feed.storyboard in Resources */,
+				C606F54826238FA3002CDE42 /* SinglePost.storyboard in Resources */,
+				C606F53926213557002CDE42 /* Comments.storyboard in Resources */,
+				C606F51E2618D9AE002CDE42 /* Admin.storyboard in Resources */,
+				C6A57EC9260161C800CE1CAC /* PostsUnderCourse.storyboard in Resources */,
+				A6D2391B25D0B0FD00683F26 /* GoogleService-Info.plist in Resources */,
+				C6A57E8A25D3460D00CE1CAC /* SignUp.storyboard in Resources */,
+				C6A57DDB25D0A16A00CE1CAC /* Assets.xcassets in Resources */,
+				C606F530261A65B1002CDE42 /* AdminPosts.storyboard in Resources */,
+				C606F5422621EFE5002CDE42 /* AdminComments.storyboard in Resources */,
+				C6A57E8725D3450B00CE1CAC /* Login.storyboard in Resources */,
+				C6A57EAE25F6E40C00CE1CAC /* CreatePost.storyboard in Resources */,
+				C6A57DD925D0A16600CE1CAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51300AA1C0CCDE133D62B38F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoilerBond/Pods-BoilerBond-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoilerBond/Pods-BoilerBond-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoilerBond/Pods-BoilerBond-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C663FFF745AED0BBEFB0228A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoilerBond-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6A57DCA25D0A16600CE1CAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A57EA825E2DCAC00CE1CAC /* SearchViewController.swift in Sources */,
+				C6A57EC025F6F15400CE1CAC /* EnrolledCoursesTableViewCell.swift in Sources */,
+				C6A57E8D25D347C100CE1CAC /* LoginViewController.swift in Sources */,
+				C6A57E8425D0C0C400CE1CAC /* Course.swift in Sources */,
+				C606F5272618DD0C002CDE42 /* UserTableViewCell.swift in Sources */,
+				C6A57E9C25D352B000CE1CAC /* VerifyEmailViewController.swift in Sources */,
+				C6A57E9325D34B6500CE1CAC /* SignUpViewController.swift in Sources */,
+				C606F536261A6768002CDE42 /* AdminPostTableViewCell.swift in Sources */,
+				C606F53F2621360E002CDE42 /* CommentViewController.swift in Sources */,
+				C6A57EA525D5F2AB00CE1CAC /* ProfileViewController.swift in Sources */,
+				C6A57EB125F6E85B00CE1CAC /* CreatePostViewController.swift in Sources */,
+				C606F5242618DBBF002CDE42 /* AdminUserViewController.swift in Sources */,
+				C606F54B262390D7002CDE42 /* SinglePostViewController.swift in Sources */,
+				C606F52D2618E6B6002CDE42 /* CourseAdminTableViewCell.swift in Sources */,
+				C6A57E7E25D0C00300CE1CAC /* User.swift in Sources */,
+				C606F52A2618DFB9002CDE42 /* CourseViewController.swift in Sources */,
+				C6A57EBD25F6F0BB00CE1CAC /* EnrolledCoursesViewController.swift in Sources */,
+				C606F533261A65E5002CDE42 /* AdminPostViewController.swift in Sources */,
+				C6A57E9925D34F9200CE1CAC /* InfoViewController.swift in Sources */,
+				C606F5452621F01E002CDE42 /* AdminCommentViewController.swift in Sources */,
+				C6A57EAB25E2DFD300CE1CAC /* CourseTableViewCell.swift in Sources */,
+				C606F5212618DB00002CDE42 /* AdminViewController.swift in Sources */,
+				C6A57EB725F6ED1500CE1CAC /* CreateCourseViewController.swift in Sources */,
+				C6A57DD625D0A16600CE1CAC /* ViewController.swift in Sources */,
+				C606F53C262135D1002CDE42 /* CommentTableViewCell.swift in Sources */,
+				C6A57EC325FC425300CE1CAC /* PostTableViewCell.swift in Sources */,
+				C6A57ECC2601638300CE1CAC /* CoursePostsViewController.swift in Sources */,
+				C6A57DD225D0A16600CE1CAC /* AppDelegate.swift in Sources */,
+				C6A57E9F25D4411F00CE1CAC /* SettingsTableViewController.swift in Sources */,
+				C6A57DD425D0A16600CE1CAC /* SceneDelegate.swift in Sources */,
+				C6A57EC625FE9C8D00CE1CAC /* FeedViewController.swift in Sources */,
+				C6A57EA225D593D300CE1CAC /* ForgotPasswordViewController.swift in Sources */,
+				C6A57E9625D34D9900CE1CAC /* ProfilePictureViewController.swift in Sources */,
+				C6A57E8125D0C06900CE1CAC /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6A57DD725D0A16600CE1CAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6A57DD825D0A16600CE1CAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6A57DDC25D0A16A00CE1CAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6A57DDD25D0A16A00CE1CAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6A57DE025D0A16A00CE1CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6A57DE125D0A16A00CE1CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6A57DE325D0A16A00CE1CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5930B38B41CEFBDB402E5F1B /* Pods-BoilerBond.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoilerBond/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Purdue.BoilerBond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6A57DE425D0A16A00CE1CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37386E2E585449512D600BC0 /* Pods-BoilerBond.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoilerBond/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Purdue.BoilerBond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6A57DC925D0A16600CE1CAC /* Build configuration list for PBXProject "BoilerBond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6A57DE025D0A16A00CE1CAC /* Debug */,
+				C6A57DE125D0A16A00CE1CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6A57DE225D0A16A00CE1CAC /* Build configuration list for PBXNativeTarget "BoilerBond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6A57DE325D0A16A00CE1CAC /* Debug */,
+				C6A57DE425D0A16A00CE1CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6A57DC625D0A16600CE1CAC /* Project object */;
+}

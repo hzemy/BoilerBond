@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pmx-0w-AT3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Admin Comment View Controller-->
+        <scene sceneID="7T1-8E-url">
+            <objects>
+                <viewController id="pmx-0w-AT3" customClass="AdminCommentViewController" customModule="BoilerBond" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nfr-HH-2fC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NoM-az-cxL">
+                                <rect key="frame" x="0.0" y="105" width="414" height="726"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="726" id="bnb-r1-cjh"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Comments" rowHeight="62" id="BKL-17-6to" customClass="CommentTableViewCell" customModule="BoilerBond" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BKL-17-6to" id="0wK-w7-IGk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51v-W1-Umj">
+                                                    <rect key="frame" x="8" y="4" width="79" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9a-9T-aMj">
+                                                    <rect key="frame" x="170" y="29" width="224" height="0.0"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="224" id="nZK-Zk-VuI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-ee-ioK">
+                                                    <rect key="frame" x="349" y="0.0" width="45" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Delete"/>
+                                                    <connections>
+                                                        <action selector="deleteClicked:" destination="BKL-17-6to" eventType="touchUpInside" id="nnz-pa-kHD"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="51v-W1-Umj" secondAttribute="bottom" constant="8" id="EaR-C5-96u"/>
+                                                <constraint firstItem="h9a-9T-aMj" firstAttribute="firstBaseline" secondItem="51v-W1-Umj" secondAttribute="baseline" id="MpV-JB-37t"/>
+                                                <constraint firstItem="51v-W1-Umj" firstAttribute="leading" secondItem="0wK-w7-IGk" secondAttribute="leading" constant="8" id="SpD-Wb-ier"/>
+                                                <constraint firstItem="h9a-9T-aMj" firstAttribute="centerY" secondItem="51v-W1-Umj" secondAttribute="centerY" id="afK-EG-wZz"/>
+                                                <constraint firstItem="h9a-9T-aMj" firstAttribute="trailing" secondItem="0wK-w7-IGk" secondAttribute="trailingMargin" id="ebW-Uz-yYt"/>
+                                                <constraint firstItem="51v-W1-Umj" firstAttribute="top" secondItem="0wK-w7-IGk" secondAttribute="top" constant="4" id="jBM-hE-Yle"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="comment" destination="h9a-9T-aMj" id="Xpc-Y8-4eI"/>
+                                            <outlet property="deleteButton" destination="OCc-ee-ioK" id="bhV-Su-ONj"/>
+                                            <outlet property="username" destination="51v-W1-Umj" id="w5n-gT-ANM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9q9-a9-fHZ">
+                                <rect key="frame" x="0.0" y="56" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VmL-45-EnJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VmL-45-EnJ" firstAttribute="bottom" secondItem="NoM-az-cxL" secondAttribute="bottom" constant="31" id="HeU-dt-8wv"/>
+                            <constraint firstItem="NoM-az-cxL" firstAttribute="leading" secondItem="9q9-a9-fHZ" secondAttribute="leading" id="j8g-J5-B0L"/>
+                            <constraint firstItem="NoM-az-cxL" firstAttribute="leading" secondItem="nfr-HH-2fC" secondAttribute="leading" id="lSY-LS-vCY"/>
+                            <constraint firstAttribute="trailing" secondItem="NoM-az-cxL" secondAttribute="trailing" id="q8x-6d-0lW"/>
+                            <constraint firstItem="NoM-az-cxL" firstAttribute="trailing" secondItem="9q9-a9-fHZ" secondAttribute="trailing" id="r02-yt-963"/>
+                            <constraint firstItem="NoM-az-cxL" firstAttribute="top" secondItem="9q9-a9-fHZ" secondAttribute="bottom" constant="19" id="suV-56-f8x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentTableView" destination="NoM-az-cxL" id="p6D-BX-7Th"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9D-9a-8jq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311.59420289855075" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XUq-iT-Eeq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Course View Controller-->
+        <scene sceneID="G2b-0O-Cfi">
+            <objects>
+                <viewController id="XUq-iT-Eeq" customClass="CreateCourseViewController" customModule="BoilerBond" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XJw-FF-9WR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course Title: EX: CS407" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uir-WM-70Z">
+                                <rect key="frame" x="68" y="236" width="285" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Department: EX: CS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJ8-ld-OVi">
+                                <rect key="frame" x="68" y="301" width="285" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Course" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPc-jU-Qkm">
+                                <rect key="frame" x="0.0" y="118" width="414" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="1j4-bA-jgc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6A-6d-yIy">
+                                <rect key="frame" x="68" y="379" width="285" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="createClicked:" destination="XUq-iT-Eeq" eventType="touchUpInside" id="nwS-zr-E4m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ooj-dV-hKh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vPc-jU-Qkm" firstAttribute="leading" secondItem="XJw-FF-9WR" secondAttribute="leading" id="F3v-Bg-2BA"/>
+                            <constraint firstAttribute="trailing" secondItem="vPc-jU-Qkm" secondAttribute="trailing" id="H5P-F3-Lcy"/>
+                            <constraint firstItem="Ooj-dV-hKh" firstAttribute="bottom" secondItem="c6A-6d-yIy" secondAttribute="bottom" constant="453" id="JMM-Hu-E71"/>
+                            <constraint firstItem="c6A-6d-yIy" firstAttribute="trailing" secondItem="qJ8-ld-OVi" secondAttribute="trailing" id="KBz-NX-MBR"/>
+                            <constraint firstItem="c6A-6d-yIy" firstAttribute="leading" secondItem="qJ8-ld-OVi" secondAttribute="leading" id="LSK-0C-m6U"/>
+                            <constraint firstItem="c6A-6d-yIy" firstAttribute="trailing" secondItem="Uir-WM-70Z" secondAttribute="trailing" id="O4i-fz-R9H"/>
+                            <constraint firstItem="qJ8-ld-OVi" firstAttribute="top" secondItem="Uir-WM-70Z" secondAttribute="bottom" constant="31" id="QIv-vk-QXK"/>
+                            <constraint firstItem="c6A-6d-yIy" firstAttribute="top" secondItem="qJ8-ld-OVi" secondAttribute="bottom" constant="44" id="c5Z-Tz-ix1"/>
+                            <constraint firstItem="Ooj-dV-hKh" firstAttribute="trailing" secondItem="c6A-6d-yIy" secondAttribute="trailing" constant="61" id="cya-J7-D4d"/>
+                            <constraint firstItem="c6A-6d-yIy" firstAttribute="leading" secondItem="Ooj-dV-hKh" secondAttribute="leading" constant="68" id="os7-YG-qW0"/>
+                            <constraint firstItem="c6A-6d-yIy" firstAttribute="leading" secondItem="Uir-WM-70Z" secondAttribute="leading" id="rKR-lI-dpL"/>
+                            <constraint firstItem="Uir-WM-70Z" firstAttribute="top" secondItem="vPc-jU-Qkm" secondAttribute="bottom" constant="49" id="sCe-P2-1aS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="courseTitle" destination="Uir-WM-70Z" id="GQz-PM-6Gt"/>
+                        <outlet property="create" destination="c6A-6d-yIy" id="4oa-sh-EWn"/>
+                        <outlet property="department" destination="qJ8-ld-OVi" id="TdB-hc-pQu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UuL-Gv-EOE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

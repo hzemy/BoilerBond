@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pTB-jp-JGI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Enrolled Courses View Controller-->
+        <scene sceneID="QPs-pp-dhW">
+            <objects>
+                <viewController id="pTB-jp-JGI" customClass="EnrolledCoursesViewController" customModule="BoilerBond" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jAX-XA-MOk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="78" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PSj-gD-uSI">
+                                <rect key="frame" x="0.0" y="168" width="414" height="683"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Courses" rowHeight="78" id="Dh9-nb-3ve" customClass="EnrolledCoursesTableViewCell" customModule="BoilerBond" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dh9-nb-3ve" id="lvR-PL-Zyp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-Q6-WyK">
+                                                    <rect key="frame" x="81" y="29" width="175" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="175" id="7xd-nq-ocB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyj-WX-fpb">
+                                                    <rect key="frame" x="276" y="24" width="67" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="kyj-WX-fpb" secondAttribute="height" multiplier="67:30" id="H23-9h-PL8"/>
+                                                        <constraint firstAttribute="width" constant="67" id="OK0-Ek-Eyu"/>
+                                                        <constraint firstAttribute="height" constant="30" id="y7x-IY-FVn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <state key="normal" title="Leave"/>
+                                                    <connections>
+                                                        <action selector="leaveClicked:" destination="Dh9-nb-3ve" eventType="touchUpInside" id="5xb-PC-R42"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="kyj-WX-fpb" secondAttribute="trailing" constant="51" id="QZM-jo-jss"/>
+                                                <constraint firstItem="kyj-WX-fpb" firstAttribute="leading" secondItem="qOG-Q6-WyK" secondAttribute="trailing" constant="20" id="SRa-gg-8gU"/>
+                                                <constraint firstItem="qOG-Q6-WyK" firstAttribute="centerY" secondItem="lvR-PL-Zyp" secondAttribute="centerY" id="Xc9-Zb-5rg"/>
+                                                <constraint firstItem="kyj-WX-fpb" firstAttribute="top" secondItem="lvR-PL-Zyp" secondAttribute="topMargin" constant="13" id="mY9-d3-2AC"/>
+                                                <constraint firstItem="qOG-Q6-WyK" firstAttribute="top" secondItem="lvR-PL-Zyp" secondAttribute="topMargin" constant="18" id="oWx-IP-TtN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="courseName" destination="qOG-Q6-WyK" id="pei-TK-keL"/>
+                                            <outlet property="leave" destination="kyj-WX-fpb" id="wkE-LC-ssQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enrolled Courses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae4-49-5ol">
+                                <rect key="frame" x="0.0" y="110" width="414" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eKe-7d-aIh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="enrolledCoursesTableView" destination="PSj-gD-uSI" id="HXg-sp-nwX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOh-b4-3te" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182.60869565217394" y="42.857142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
